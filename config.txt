@@ -1,0 +1,21 @@
+# Raspberry Pi 5 Configuration File
+# Place this in /boot/firmware/ on SD card
+
+# Enable ARM 64-bit mode
+arm_64bit=1
+
+# Kernel filename
+kernel=kernel8.img
+
+# Disable splash screen
+disable_splash=1
+
+# Enable UART for debugging
+enable_uart=1
+uart_2ndstage=1
+
+# Set UART to GPIO 14/15
+dtoverlay=uart0
+
+# Disable Bluetooth to free up UART
+dtoverlay=disable-bt
